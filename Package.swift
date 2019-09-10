@@ -5,6 +5,8 @@ import PackageDescription
 let package = Package(
     name: "SourceKitLSP",
     products: [
+        .library(name: "LanguageServerProtocol", type: .static, targets: ["LanguageServerProtocol"]),
+        .library(name: "LanguageServerProtocolJSONRPC", type: .static, targets: ["LanguageServerProtocolJSONRPC"])
     ],
     dependencies: [
       // See 'Dependencies' below.
